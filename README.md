@@ -12,6 +12,8 @@
 この黒板と発話の記録から大事な情報を漏れなく得ることができるだろうと考えています。  
 
 ## 実際の画面の様子
+※表示されているテキストや画像はデモ用です
+
 <img width="250" height  alt="image1" src="https://user-images.githubusercontent.com/74057052/140633945-bad15b7e-ccd3-4b3d-ae6a-1e46e9dc1a83.png">  <img width="250" alt="image2" src="https://user-images.githubusercontent.com/74057052/140633948-5c56bd5a-3320-4e70-a532-bd066e0e78ae.png">  <img width="250" alt="image3" src="https://user-images.githubusercontent.com/74057052/140633950-2c6d23e4-82aa-44fa-86f3-7ab5fa791e9a.png">
 
 ### 今回実装できなかった機能
