@@ -12,5 +12,4 @@ class Nextpage extends StatelessWidget {
       ),
     );
   }
-
 }
