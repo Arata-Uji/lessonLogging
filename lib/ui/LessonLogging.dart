@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import "LogUnit.dart";
 
 List<Widget> _items = <Widget>[];
 
@@ -10,6 +11,9 @@ class LessonLogging extends StatefulWidget {
 }
 
 class _LessonLoggingState extends State<LessonLogging> {
+  int isRecord = 1;
+  Icon icon = Icon(Icons.stop);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -41,35 +45,47 @@ class _LessonLoggingState extends State<LessonLogging> {
         ),
         floatingActionButton: FloatingActionButton(
             backgroundColor: Colors.red,
-            child: Icon(Icons.add),
+            child: icon,
             onPressed: () {
-              _buttonPressed();
+              isRecord = _changeIsRecord(isRecord);
+              icon = _changeIcon(isRecord,icon);
+              _buttonPressed(context);
             }
         ),
       ),
     );
   }
 
-  List<Widget> list = <Widget>[];
+  int _changeIsRecord(int _isRecord){
+    return (_isRecord+1)%2;
+  }
+  Icon _changeIcon(int _isRecord, Icon _icon) {
+    if(_isRecord == 0){
+      return Icon(Icons.add);
+    }
+    else{
+      return Icon(Icons.stop);
+    }
+  }
 
-  void _buttonPressed() {
+  void _buttonPressed(BuildContext context) {
     list.add(
-      Container(
-        margin: EdgeInsets.all(15),
-        color: Colors.white,
-        height: 250.0,
-        width: 375.0,
-      ),
+        getLogUnit(context)
     );
     setState((){
       _items = list;
     });
   }
 
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
-  }
+List<Widget> list = <Widget>[];
+  // @override
+  // State<StatefulWidget> createState() {
+  // TODO: implement createState
+  //   throw UnimplementedError();
+  // }
+
+
 }
+
+
 

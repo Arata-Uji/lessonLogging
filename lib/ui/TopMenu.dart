@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lesson_logging/next_page.dart';
+
+import 'LessonLogging.dart';
+
 
 class TopMenu extends StatelessWidget {
   @override
@@ -14,7 +16,7 @@ class TopMenu extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Nextpage(),
+              MaterialPageRoute(builder: (context) => LessonLogging(),
               ),
             );
           },

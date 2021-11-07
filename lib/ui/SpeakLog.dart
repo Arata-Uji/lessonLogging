@@ -11,7 +11,6 @@ Column SpeakLog(BuildContext context){
       Padding(
         padding: const EdgeInsets.all(2.0),
         child: Text(""),
-
       ),
     ],
   );

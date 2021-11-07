@@ -6,7 +6,7 @@ Container getLogUnit(BuildContext context){
   return Container(
     margin: EdgeInsets.all(4),
     width:  MediaQuery.of(context).size.width-8,
-    height: 180,
+    height: 140,
     decoration: BoxDecoration(
       color: Colors.greenAccent,
       border: Border.all(),
@@ -35,7 +35,6 @@ Column getSpeakLog(BuildContext context) {
             fontSize: 9,
           ))
         ),
-
     ],
   );
 }
