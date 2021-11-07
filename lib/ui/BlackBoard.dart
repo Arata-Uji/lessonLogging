@@ -9,10 +9,6 @@ Column getBlackBoard(BuildContext context){
         padding: const EdgeInsets.all(2.0),
         child: getBlackBoardImage(context),
       ),
-      Padding(
-        padding: const EdgeInsets.all(2.0),
-        child: getHowMuchPassed(context),
-      )
     ],
   );
 }
@@ -26,22 +22,9 @@ Container getBlackBoardImage(BuildContext context){
           borderRadius: BorderRadius.circular(4.0),
           border: Border.all(color: Colors.black, width: 1.2),
           image: DecorationImage(
-              image: NetworkImage("https://picsum.photos/200/100"),
+              image: NetworkImage("https://picsum.photos/200/100?random"),
               fit: BoxFit.cover)
       )
   );
 }
 
-Container getHowMuchPassed(BuildContext context){
-  return Container(
-      width: MediaQuery.of(context).size.width / 2 - 8,
-      child: Column(
-        children: <Widget>[
-          Container(
-            height: 20,
-              child: Text("1 minies ago")
-          )
-        ],
-      )
-  );
-}
