@@ -1,6 +1,12 @@
-# lesson_logging
+# LessonLogging
 
-A new Flutter project.
+2021/11/6~11/7にかけて行われた、ベネッセのハッカソンで開発したコードです。  
+言語はDartを、フレームワークとしてはFlutterを用いました。  
+開発ツールとしては、Android StudioやIntelli Jを用いました。  
+
+## 概要
+
+
 
 ## Getting Started
 
