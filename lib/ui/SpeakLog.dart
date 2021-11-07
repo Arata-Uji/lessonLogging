@@ -10,7 +10,7 @@ Column SpeakLog(BuildContext context){
     children: <Widget>[
       Padding(
         padding: const EdgeInsets.all(2.0),
-        child: Text(),
+        child: Text(""),
 
       ),
     ],
